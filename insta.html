@@ -3,9 +3,10 @@
 <html>
 <head>
     <title>Instagram Login</title>
+
     <style>
         body {
-            background-color: #fafafa;
+            background: linear-gradient(45deg, purple, red, orange);
             font-family: Arial;
             text-align: center;
         }
@@ -15,43 +16,51 @@
             width: 300px;
             margin: 100px auto;
             padding: 30px;
-            border: 1px solid #ddd;
+            border-radius: 15px;
         }
 
         h1 {
             font-family: cursive;
+            font-size: 35px;
         }
 
         input {
             width: 90%;
-            padding: 10px;
-            margin: 5px;
+            padding: 12px;
+            margin: 8px;
+            border: 1px solid gray;
+            border-radius: 5px;
         }
 
         button {
-            width: 98%;
-            padding: 10px;
-            background: #3897f0;
+            width: 100%;
+            padding: 12px;
+            background: #e1306c;
             color: white;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
         }
     </style>
 </head>
+
 <body>
 
-<div class="login">
-    <h1>Instagram</h1>
+    <div class="login">
 
-    <input type="text" placeholder="Username">
+        <h1>Instagram</h1>
 
-    <input type="password" placeholder="Password">
+        <input type="text" placeholder="Username">
 
-    <button>Log In</button>
+        <input type="password" placeholder="Password">
 
-    <p>Forgot password?</p>
-    <p>Don't have an account? Sign up</p>
-</div>
+        <button>Log In</button>
+
+        <p>Forgot Password?</p>
+
+        <p>Don't have an account? Sign up</p>
+
+    </div>
 
 </body>
 </html>
