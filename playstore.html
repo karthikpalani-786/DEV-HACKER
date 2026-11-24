@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Play Store</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fa;
+        }
+
+        header {
+            background: white;
+            padding: 20px;
+            color: #01875f;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .search {
+            padding: 15px;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+        }
+
+        .menu {
+            background: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .app {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .app h2 {
+            color: #333;
+        }
+
+        button {
+            background: #01875f;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>▶ Google Play</header>
+
+<div class="search">
+    <input type="text" placeholder="Search apps & games">
+</div>
+
+<div class="menu">
+    <span>Games</span>
+    <span>Apps</span>
+    <span>Movies</span>
+    <span>Books</span>
+</div>
+
+<div class="app">
+    <h2>📸 Instagram</h2>
+    <p>Social Media App</p>
+    <p>⭐ 4.5 Rating</p>
+    <button onclick="installApp('Instagram')">Install</button>
+</div>
+
+<div class="app">
+    <h2>📘 Facebook</h2>
+    <p>Connect with friends</p>
+    <p>⭐ 4.2 Rating</p>
+    <button onclick="installApp('Facebook')">Install</button>
+</div>
+
+<div class="app">
+    <h2>▶ YouTube</h2>
+    <p>Watch videos online</p>
+    <p>⭐ 4.4 Rating</p>
+    <button onclick="installApp('YouTube')">Install</button>
+</div>
+
+<script>
+    function installApp(name) {
+        alert(name + " selected!");
+    }
+</script>
+
+</body>
+</html>
