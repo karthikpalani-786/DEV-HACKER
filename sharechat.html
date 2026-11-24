@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShareChat</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #ff1744;
+            color: white;
+            padding: 18px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .menu {
+            background: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .post {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .post h3 {
+            color: #ff1744;
+        }
+
+        .post img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        button {
+            background: #ff1744;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>ShareChat</header>
+
+<div class="menu">
+    <span>Home</span>
+    <span>Trending</span>
+    <span>Videos</span>
+    <span>Profile</span>
+</div>
+
+<div class="post">
+    <h3>👤 Karthi</h3>
+    <p>Welcome to my ShareChat page!</p>
+    <h2>❤️ Enjoy Every Moment ❤️</h2>
+    <button onclick="likePost()">❤️ Like</button>
+    <p id="likes">0 Likes</p>
+</div>
+
+<div class="post">
+    <h3>👤 Tamil Friends</h3>
+    <p>நல்ல எண்ணங்கள் நல்ல வாழ்க்கையை உருவாக்கும்!</p>
+    <button>❤️ Like</button>
+    <p>Comments 💬</p>
+</div>
+
+<script>
+    let count = 0;
+
+    function likePost() {
+        count++;
+        document.getElementById("likes").innerHTML =
+            count + " Likes";
+    }
+</script>
+
+</body>
+</html>
